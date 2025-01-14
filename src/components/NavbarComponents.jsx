@@ -22,17 +22,17 @@ const NavbarComponents = () => {
     },
   ];
 
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState(true);
   return (
     <div className="flex items-center justify-between p-5 w-full max-w-7xl m-auto">
       <div className="nav-logo relative z-20">
-        <a href="" className="text-xl md:text-3xl font-bold text-black-primary">
+        <a href="" className="text-2xl md:text-3xl font-bold text-black-primary">
           Rund<span className="text-blue-primary">Pay</span>
         </a>
       </div>
       {/* navbar for mobile */}
       <div
-        className={`flex md:hidden flex-col items-center justify-center fixed top-0 right-0 bg-blue-secondary min-h-full w-full z-10 gap-6 ease-in-out duration-500 ${
+        className={`flex md:hidden flex-col items-center justify-center fixed top-0  bg-blue-secondary min-h-full w-full z-10 gap-6 ease-in-out duration-500 ${
           openMenu ? "-right-full" : "right-0"
         }`}
       >
