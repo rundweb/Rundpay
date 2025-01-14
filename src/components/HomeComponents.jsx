@@ -11,7 +11,7 @@ const HomeComponents = () => {
     "
     >
       <div className="flex flex-col gap-5 text-center w-full md:text-left">
-        <h1 className="text-black-secondary text-2xl font-bold tracking-wide sm:leading-[64px] sm:text-5xl lg:text-6xl lg:leading-[80px]">
+        <h1 className="text-black-secondary text-2xl font-bold tracking-normal sm:leading-[54px] sm:text-4xl lg:text-6xl lg:leading-[80px]">
           Get paid early save automatically all your pay.
         </h1>
         <p className="text-black-secondary text-sm font-normal tracking-wider md:text-base md:w-4/5">
@@ -33,7 +33,7 @@ const HomeComponents = () => {
         </div>
       </div>
       <div className="w-full flex items-center justify-center relative">
-        <div className="absolute max-w-56 bg-white w-full rounded-2xl overflow-hidden max-h-72 h-full md:flex flex-col justify-between -top-[10%] right-0 hidden">
+        <div className="absolute max-w-56 bg-white w-full rounded-2xl overflow-hidden max-h-72 h-full lg:flex flex-col justify-between -top-[10%] right-0 hidden">
           <div className="bg-blue-primary h-full p-7 flex flex-col gap-1">
             <p className="text-white font-normal text-sm tracking-wide">Credit Card</p>
             <p className="text-white font-semibold text-xl">234 **** ****</p>
