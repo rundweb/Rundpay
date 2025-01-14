@@ -7,7 +7,7 @@ const HomeComponents = () => {
   return (
     <div
       className="flex flex-col gap-10 p-5 overflow-hidden min-h-screen items-center 
-      md:flex-row max-w-7xl m-auto justify-between
+      md:flex-row max-w-7xl m-auto md:justify-between
     "
     >
       <div className="flex flex-col gap-5 text-center w-full md:text-left">
@@ -22,18 +22,18 @@ const HomeComponents = () => {
           <input
             type="text"
             placeholder="Your bussiness email"
-            className="border-2 w-full px-2 py-3 rounded-lg text-sm outline-blue-primary"
+            className="border-2 w-full px-2 py-3 rounded-lg text-sm outline-blue-primary md:px-4 md:py-5 placeholder:text-sm"
           />
           <a
             href=""
-            className="absolute flex items-center right-0 bg-blue-primary h-full rounded-lg text-sm text-white font-medium px-4 gap-3"
+            className="absolute flex items-center right-[4px] bg-blue-primary h-[85%] rounded-lg text-sm text-white font-medium px-4 md:px-6 gap-3"
           >
             Get Started
           </a>
         </div>
       </div>
       <div className="w-full flex items-center justify-center relative">
-        <div className="absolute max-w-56 bg-white w-full rounded-3xl overflow-hidden max-h-72 h-full md:flex flex-col justify-between -top-[10%] right-0 hidden">
+        <div className="absolute max-w-56 bg-white w-full rounded-2xl overflow-hidden max-h-72 h-full md:flex flex-col justify-between -top-[10%] right-0 hidden">
           <div className="bg-blue-primary h-full p-7 flex flex-col gap-1">
             <p className="text-white font-normal text-sm tracking-wide">Credit Card</p>
             <p className="text-white font-semibold text-xl">234 **** ****</p>
