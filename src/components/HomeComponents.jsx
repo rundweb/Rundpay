@@ -8,7 +8,7 @@ const HomeComponents = () => {
     <div
       className="flex flex-col p-5 gap-10 overflow-hidden items-center 
       md:flex-row max-w-7xl m-auto md:justify-between
-      lg:-mt-5
+      lg:-mt-10 lg:min-h-screen
     "
     >
       <div className="flex flex-col gap-5 text-center w-full md:text-left">

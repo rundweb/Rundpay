@@ -11,6 +11,9 @@ export default {
         'blue-secondary' : '#E9F3F4',
         'black-primary' : '#1D1E20',
         'black-secondary':'#023347'
+      },
+      backgroundImage: {
+        'card': "url('/src/assets/images/bg-card.png')",
       }
     },
   },

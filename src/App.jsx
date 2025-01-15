@@ -1,4 +1,5 @@
 import HomeComponents from "./components/HomeComponents";
+import MissionComponents from "./components/MissionComponents";
 import NavbarComponents from "./components/NavbarComponents";
 import ServiceComponents from "./components/ServiceComponents";
 import StepsComponents from "./components/StepsComponents";
@@ -11,6 +12,7 @@ const App = () => {
     <ServiceComponents/>
     <WhyusComponents/>
     <StepsComponents/>
+    <MissionComponents/>
   </div>;
 };
 
