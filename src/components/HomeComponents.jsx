@@ -6,7 +6,7 @@ import { PiBankFill } from "react-icons/pi";
 const HomeComponents = () => {
   return (
     <div
-      className="flex flex-col p-5 gap-10 overflow-hidden min-h-screen items-center 
+      className="flex flex-col p-5 gap-10 overflow-hidden items-center 
       md:flex-row max-w-7xl m-auto md:justify-between
       lg:-mt-5
     "
