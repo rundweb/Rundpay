@@ -1,4 +1,5 @@
 import ContactComponents from "./components/ContactComponents";
+import FooterComponents from "./components/FooterComponents";
 import HomeComponents from "./components/HomeComponents";
 import MissionComponents from "./components/MissionComponents";
 import NavbarComponents from "./components/NavbarComponents";
@@ -15,6 +16,7 @@ const App = () => {
     <StepsComponents/>
     <MissionComponents/>
     <ContactComponents/>
+    <FooterComponents/>
   </div>;
 };
 
