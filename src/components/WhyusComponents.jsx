@@ -4,7 +4,7 @@ import { BiSolidBank } from "react-icons/bi";
 import card from "../assets/images/card.png";
 const WhyusComponents = () => {
   return (
-    <div className="max-w-7xl m-auto w-full flex flex-col gap-5 py-5 lg:gap-10 lg:my-10">
+    <div className="max-w-7xl m-auto w-full flex flex-col gap-5 py-5 lg:gap-10 lg:my-10 px-5">
       <div className="flex flex-col gap-2 text-center lg:mb-5">
         <p className="text-blue-primary font-bold text-lg lg:text-xl">WHY US</p>
         <h1 className="text-black-secondary font-bold text-3xl tracking-wide lg:text-4xl">

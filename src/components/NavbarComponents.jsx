@@ -24,7 +24,7 @@ const NavbarComponents = () => {
 
   const [openMenu, setOpenMenu] = useState(true);
   return (
-    <div className="flex items-center justify-between w-full max-w-7xl m-auto">
+    <div className="flex items-center p-5 justify-between w-full max-w-7xl m-auto">
       <div className="nav-logo relative z-20">
         <a href="" className="text-2xl md:text-3xl font-bold text-black-primary">
           Rund<span className="text-blue-primary">Pay</span>
