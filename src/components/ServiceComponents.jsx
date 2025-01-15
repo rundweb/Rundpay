@@ -23,9 +23,13 @@ const ServiceComponents = () => {
     },
   ];
   return (
-    <div className="p-5" data-aos="flip-up" data-aos-duration="1300">
+    <div className="p-5">
       <div className="flex flex-col p-10 max-w-7xl m-auto items-center gap-20 bg-white rounded-2xl lg:px-20 lg:py-12">
-        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div
+          className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between"
+          data-aos="fade-left"
+          data-aos-duration="1600"
+        >
           <div className="flex flex-col gap-1">
             <p className="text-blue-primary text-sm font-semibold tracking-wide">
               FUTURE PAYMENT
@@ -46,6 +50,8 @@ const ServiceComponents = () => {
             <div
               key={item.id}
               className="max-w-80 flex flex-col gap-2 max-h-80"
+              data-aos="fade-left"
+              data-aos-duration="1600"
             >
               <item.icon className="text-blue-primary text-6xl" />
               <h1 className="text-black-primary text-xl font-semibold">
