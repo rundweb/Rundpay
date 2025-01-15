@@ -56,13 +56,14 @@ const FooterComponents = () => {
     },
   ];
   return (
-    <div className="p-5 max-w-7xl m-auto w-full flex flex-wrap gap-5 justify-around pb-20 md:py-20">
+    <div className="p-5 max-w-7xl m-auto w-full flex flex-wrap gap-8 justify-around pb-20 md:py-20">
       <div className="mb-4">
         <h1 className="text-4xl font-bold text-black-secondary">
           Rund<span className="text-blue-primary">Pay</span>
         </h1>
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-wrap gap-12 lg:gap-24">
+        <div className="flex flex-col gap-2">
           <h1 className="mb-2 text-xl font-semibold text-black-secondary">
             Solutions
           </h1>
@@ -92,6 +93,7 @@ const FooterComponents = () => {
             </div>
           ))}
         </div>
+      </div>
       <div className="flex flex-col gap-2">
         <h1 className="mb-2 text-xl font-semibold text-black-secondary">
           Follow us on
@@ -99,7 +101,7 @@ const FooterComponents = () => {
         <div className="flex gap-5">
           {follow.map((item) => (
             <div key={item.icon}>
-              <item.icon className="text-black-secondary text-2xl"/>
+              <item.icon className="text-black-secondary text-2xl" />
             </div>
           ))}
         </div>

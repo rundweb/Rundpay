@@ -1,6 +1,6 @@
 const ContactComponents = () => {
   return (
-    <div className="p-5 max-w-7xl w-full m-auto">
+    <div className="p-5 max-w-7xl w-full m-auto" data-aos="zoom-in" data-aos-duration="1600">
       <div className="bg-black-secondary rounded-3xl px-5 py-8 flex flex-col gap-5 md:flex-row md:px-14 md:py-14 lg:px-20 lg:py-20">
         <div className="flex flex-col gap-2 lg:gap-4">
           <h2 className="text-blue-primary text-base font-semibold lg:text-lg">TRY IT NOW</h2>

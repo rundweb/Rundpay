@@ -11,7 +11,8 @@ const HomeComponents = () => {
       lg:-mt-10 lg:min-h-screen
     "
     >
-      <div className="flex flex-col gap-5 text-center w-full md:text-left">
+      <div className="flex flex-col gap-5 text-center w-full md:text-left" 
+      data-aos="zoom-in" data-aos-duration="1000">
         <h1 className="text-black-secondary text-2xl font-bold tracking-normal sm:leading-[54px] sm:text-4xl lg:text-6xl lg:leading-[80px]">
           Get paid early save automatically all your pay.
         </h1>
@@ -33,7 +34,8 @@ const HomeComponents = () => {
           </a>
         </div>
       </div>
-      <div className="w-full flex items-center justify-center relative">
+      <div className="w-full flex items-center justify-center relative"
+      data-aos="zoom-in" data-aos-duration="1000">
         <div className="absolute max-w-56 bg-white w-full rounded-2xl overflow-hidden max-h-72 h-full lg:flex flex-col justify-between -top-[10%] right-0 hidden">
           <div className="bg-blue-primary h-full p-7 flex flex-col gap-1">
             <p className="text-white font-normal text-sm tracking-wide">Credit Card</p>
@@ -44,7 +46,7 @@ const HomeComponents = () => {
             <IoIosWifi className="text-4xl rotate-90"/>
           </div>
         </div>
-        <div className="bg-white shadow-sm max-w-md w-full rounded-3xl py-5 px-5 flex flex-col gap-5">
+        <div className="bg-white shadow-sm max-w-md w-full rounded-3xl py-5 px-5 flex flex-col gap-5 ">
           <div className="flex items-center gap-2">
             <RiMoneyDollarCircleFill className="text-5xl text-blue-primary" />
             <div>

@@ -23,8 +23,8 @@ const ServiceComponents = () => {
     },
   ];
   return (
-    <div className="p-5">
-      <div className="flex flex-col p-10 max-w-7xl m-auto items-center gap-10 bg-white rounded-2xl lg:px-20 lg:py-12">
+    <div className="p-5" data-aos="flip-up" data-aos-duration="1300">
+      <div className="flex flex-col p-10 max-w-7xl m-auto items-center gap-20 bg-white rounded-2xl lg:px-20 lg:py-12">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="flex flex-col gap-1">
             <p className="text-blue-primary text-sm font-semibold tracking-wide">
