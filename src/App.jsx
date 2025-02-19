@@ -1,30 +1,32 @@
 import { useEffect } from "react";
-import ContactComponents from "./components/ContactComponents";
-import FooterComponents from "./components/FooterComponents";
-import HomeComponents from "./components/HomeComponents";
-import MissionComponents from "./components/MissionComponents";
-import NavbarComponents from "./components/NavbarComponents";
-import ServiceComponents from "./components/ServiceComponents";
-import StepsComponents from "./components/StepsComponents";
-import WhyusComponents from "./components/WhyusComponents";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import Blog from "./pages/Blog";
 
 const App = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll ke atas setiap kali halaman berubah
+    }, [pathname]);
+
   return (
-    <div className="bg-blue-secondary flex flex-col gap-5 items-center overflow-hidden">
-      <NavbarComponents />
-      <HomeComponents />
-      <ServiceComponents />
-      <WhyusComponents />
-      <StepsComponents />
-      <MissionComponents />
-      <ContactComponents />
-      <FooterComponents />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/signup" element={<SignUp />}></Route>
+        <Route path="/blog" element={<Blog />}></Route>
+      </Routes>
+    </>
   );
 };
 

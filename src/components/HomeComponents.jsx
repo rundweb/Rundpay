@@ -3,47 +3,61 @@ import { IoIosWifi } from "react-icons/io";
 import { RiVisaLine } from "react-icons/ri";
 import { FaMoneyCheck } from "react-icons/fa6";
 import { PiBankFill } from "react-icons/pi";
+import homeLogo1 from "../assets/images/logohome1.svg";
+import homeLogo2 from "../assets/images/logohome2.svg";
+import homeLogo3 from "../assets/images/logohome3.svg";
 const HomeComponents = () => {
+  const imgHome = [homeLogo1, homeLogo2, homeLogo3];
   return (
-    <div
-      className="flex flex-col p-5 gap-10 overflow-hidden items-center 
-      md:flex-row max-w-7xl m-auto md:justify-between
-      lg:-mt-10 lg:min-h-screen
-    "
-    >
-      <div className="flex flex-col gap-5 text-center w-full md:text-left" 
-      data-aos="zoom-in" data-aos-duration="1000">
-        <h1 className="text-black-secondary text-2xl font-bold tracking-normal sm:leading-[54px] sm:text-4xl lg:text-6xl lg:leading-[80px]">
-          Get paid early save automatically all your pay.
+    <div id="home" className="flex flex-col max-w-7xl m-auto p-5 gap-10 md:flex-row items-center justify-between py-10 md:py-16 min-h-screen mt-10">
+      <div
+        className="flex flex-col gap-5 text-center w-full md:text-left"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <h1 className="text-black-secondary text-3xl font-bold tracking-normal sm:text-4xl lg:text-6xl lg:leading-snug md:max-w-4xl">
+          Get paid early <br className="hidden md:block" /> save automatically
+          all your pay.
         </h1>
-        <p className="text-black-secondary text-sm font-normal tracking-wider md:text-base md:w-4/5">
-          Suports small businesses with simple invoicing, powerfull
+        <p className="text-black-secondary text-sm font-normal tracking-wider md:text-base md:w-4/5 lg:mb-5">
+          Supports small businesses with simple invoicing, powerfull
           integrations, and cash flow management tools.
         </p>
-        <div className="btn-home w-full flex items-center justify-between relative md:w-4/5">
+        <div className="flex flex-col gap-2 relative lg:max-w-lg">
           <input
-            type="text"
-            placeholder="Your bussiness email"
-            className="border-2 w-full px-2 py-3 rounded-lg text-sm outline-blue-primary md:px-4 md:py-5 placeholder:text-sm"
+            type="email"
+            name=""
+            id=""
+            placeholder="Your email"
+            className="w-full h-12 lg:h-14 rounded-xl px-5 outline-blue-primary text-black-secondary/80"
           />
-          <a
-            href=""
-            className="absolute flex items-center right-[4px] bg-blue-primary h-[85%] rounded-lg text-sm text-white font-medium px-4 md:px-6 gap-3"
-          >
-            Get Started
-          </a>
+          <div className="w-full cursor-pointer bg-blue-primary h-12  rounded-xl flex items-center justify-center lg:absolute lg:w-max px-8 right-1 lg:h-[90%] lg:top-2/4 lg:-translate-y-2/4 hover:bg-black-secondary duration-300 ease-in-out">
+            <a href="" className="text-white tracking-wide">Get Started</a>
+          </div>
+        </div>
+        <div className="hidden lg:flex flex-wrap items-center justify-center lg:justify-start gap-10 mt-7">
+          {imgHome.map((item, i) => (
+            <div key={i}>
+              <img src={item} alt="logo-sponsor" className="w-40 opacity-90" />
+            </div>
+          ))}
         </div>
       </div>
-      <div className="w-full flex items-center justify-center relative"
-      data-aos="zoom-in" data-aos-duration="1000">
+      <div
+        className="w-full flex items-center justify-center relative"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="absolute max-w-56 bg-white w-full rounded-2xl overflow-hidden max-h-72 h-full lg:flex flex-col justify-between -top-[10%] right-0 hidden">
           <div className="bg-blue-primary h-full p-7 flex flex-col gap-1">
-            <p className="text-white font-normal text-sm tracking-wide">Credit Card</p>
+            <p className="text-white font-normal text-sm tracking-wide">
+              Credit Card
+            </p>
             <p className="text-white font-semibold text-xl">234 **** ****</p>
           </div>
           <div className="bg-black-secondary flex items-center justify-between text-white py-4 px-7">
-            <RiVisaLine className="text-5xl"/>
-            <IoIosWifi className="text-4xl rotate-90"/>
+            <RiVisaLine className="text-5xl" />
+            <IoIosWifi className="text-4xl rotate-90" />
           </div>
         </div>
         <div className="bg-white shadow-sm max-w-md w-full rounded-3xl py-5 px-5 flex flex-col gap-5 ">
